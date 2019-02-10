@@ -1,7 +1,7 @@
 def main():
     alphabet="abcdefghijklmnopqrstuvwxyz"
-    plainstring = raw_input("input some string")
-    rawkey = raw_input("input some key")
+    plainstring = raw_input("Enter a string: ").lower()
+    rawkey = raw_input("Enter your key: ").lower()
     p=0
     cipher=''
     original=''
@@ -11,7 +11,7 @@ def main():
             finalletter=alphabet[(firstnumber+secondnumber)%26]
             cipher=cipher+finalletter
             p=p+1
-    print("your cipher is "+cipher)
+    print("The cipher is: " + cipher)
     p=0
     for b in cipher:
         firstnumber = alphabet.index(b)
@@ -20,6 +20,6 @@ def main():
         original = original + finalletter
         p = p + 1
 
-    print ("\n while original text was "+original)
+    print ("\n The original text was: "+original)
     return 0
 main()
