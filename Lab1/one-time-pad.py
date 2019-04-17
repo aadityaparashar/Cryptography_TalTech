@@ -5,7 +5,7 @@ def main():
 
 	plaintext = "wiki"
 	#plaintext = raw_input ("Enter string to encrypt: ")
-	print (binascii.a2b_uu(plaintext))
+	#print (binascii.a2b_uu(plaintext))
 
 	binary_of_plain = "01010111 01101001 01101011 01101001"
 	#binary_of_plain = ' '.join(format(ord(x), 'b') for x in plaintext)
